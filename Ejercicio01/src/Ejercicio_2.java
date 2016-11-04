@@ -1,3 +1,14 @@
+/**Leer un número N que debe filtrarse entre 1 y 100
+ * y a continuación calcular y escribir la tabla de multiplicar de ese número con el siguiente formato:
+ * 
+ * TABLA DE MULTIPLICAR DE 8
+8 * 1 = 8
+8 * 2 = 16
+8 * 3 = 24
+......
+.....
+8 * 10 = 80
+*/
 import java.util.Scanner;
 public class Ejercicio_2 {
 
