@@ -8,28 +8,53 @@ public class Ejercicio_7 {
 		// TODO Auto-generated method stub
 		Scanner teclado= new Scanner (System.in);
 
-		int numero,contador,suma,media;
+		int numero,max,min,contador,suma;
 		
 		System.out.println ("Ingrese un número");
 		numero= teclado.nextInt ();
+		max=0;
+		min=99999;
 		contador=0;
 		suma=0;
-		suma=suma+numero;
-
-
+		
+		if (numero>max) {
+			max=numero;
+		
+		if (numero<=min) 
+					min=numero;
+		}
 		while (numero!=0) {
 			System.out.println ("Ingrese un número");
 			numero= teclado.nextInt ();
-			contador=contador+1;
-			suma=suma+numero;
+				if (numero!=0)  {
+					suma=numero+suma;
+					contador=contador+1;
+					if (numero>max) {
+						max=numero;
+					
+					if (numero<=min) 
+								min=numero;
+								
+								
+								
+						}
+				
+					}
+					
 			
 				
-			}
+				}	
+		System.out.println("Esta es la media = " + suma/contador);
+		System.out.println("Este es el numero mayor = " + max);
+		System.out.println("Este es el numero menor = " + min);
+		
+	}
+}	
+			
 			
 		
+		
 	
-		media=suma/contador;
-		System.out.println("Media" + media);
-	}
 
-}
+
+

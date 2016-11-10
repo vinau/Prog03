@@ -11,25 +11,25 @@ public class Ejercicio_8 {
 		// TODO Auto-generated method stub
 		Scanner teclado= new Scanner (System.in);
 		
-		int numero,contador,m,primero,segundo;
+		int numero,operacion;
+		
 		System.out.println ("Ingrese un número");
 		numero= teclado.nextInt ();
 		
-			m=numero*(numero-1);
-			
-				if (numero>0) {
-					
-					System.out.println(m);
-					
-				}
-					
-					
-
-				}
-				
-				
+		operacion=1;
+		
+		while (numero>0) {
+			operacion=operacion*numero;
+			numero--;
+					}
+		System.out.println (operacion);
 			}
-			
+		
+	
+		
+		
+			}
+
 			
 	
 
