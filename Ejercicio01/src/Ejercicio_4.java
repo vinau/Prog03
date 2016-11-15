@@ -8,7 +8,38 @@ public class Ejercicio_4 {
 		// TODO Auto-generated method stub
 		Scanner teclado= new Scanner (System.in);
 		
-		int numero,divisor,comprobador;							//Aqui definimos numero, que sera el numero que introduzcamos
+		
+		int numero, divisor=2;
+		boolean esPrimo=true;
+		
+		System.out.println ("Introduzca un número:");
+		numero = teclado.nextInt();
+		
+		while (esPrimo && divisor <numero){
+			
+			esPrimo=numero%divisor !=0;
+			divisor++;
+			
+		}
+		
+		if (esPrimo==true){
+			
+			System.out.println("el número"+numero+"es primo");
+			
+		}
+		
+		if (esPrimo==false){
+			
+			System.out.println("el número"+numero+"no es primo");
+			
+		}
+		
+		
+	}
+}
+		
+		
+		/*int numero,divisor,comprobador;							//Aqui definimos numero, que sera el numero que introduzcamos
 																//divisor que sera el número ntre el que dividamos
 																//y comprobador que sera el
 		
