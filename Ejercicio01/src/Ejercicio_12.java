@@ -1,3 +1,12 @@
+/*
+ * Realizar un programa que elija mediante un menú un tipo de figura:
+ Triángulo
+ Cuadrado
+ Rectángulo
+Una vez elegida la opción nos pida en cada caso los datos necesarios para calcular su área y nos la muestre.
+ * 
+ * 
+*/
 import java.util.Scanner;
 public class Ejercicio_12 {
 

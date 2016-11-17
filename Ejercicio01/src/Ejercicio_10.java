@@ -8,49 +8,46 @@ public class Ejercicio_10 {
 		// TODO Auto-generated method stub
 		Scanner teclado= new Scanner (System.in);
 		
-		int numero, divisor=2;
-		boolean esPrimo=true;
+		int numero, divisor=2,contador,contador2,suma;
+		boolean Primo=false;
+		
 		
 		System.out.println ("Introduzca un número:");
 		numero = teclado.nextInt();
 		
-		numero++;
+		suma=0;
+		contador2=1;
 		
-		while (esPrimo && divisor <numero){
-			
-			esPrimo=numero%divisor !=0;
-			divisor++;
-			
-		}
+		while (Primo==false) {
+			suma=contador2+numero;
+			contador=0;
 		
-		if (esPrimo==true){
-			
-			System.out.println("el número"+numero+"es primo");
-			
-		}
-		
-		if (esPrimo==false){
-			
-			//Aqui hay que repetir el proceso para que siga sumando al valor numero cada vez que esPrimo sea falso.
-			boolean esPrimo2=true;
-			esPrimo2=true;
-			int divisor2=2;
-			
-			while (esPrimo2 && divisor2 <numero){
-				
-				numero++;
-				
-				esPrimo2=numero%divisor2 !=0;
-				divisor2++;
-				
+			for (int incremento=1;incremento<=suma;incremento++) {
+				if (suma%incremento==0)
+					contador++;
 			}
-			
-			if (esPrimo2==true){
-				
-				System.out.println("el número"+numero+"primo");
-				
+				if (contador==2) {
+					Primo=true;
+				}
+				contador2++;
+			}
+		System.out.println ("El numero primo mas cercano es " + suma);
 		}
+	
+			
+		}
+			
+
 		
-	}
-}
-}
+		
+	
+		
+		
+	
+			
+			
+	
+	
+			
+	
+
