@@ -19,7 +19,6 @@ public class Ejercicio_4 {
 			
 			esPrimo=numero%divisor !=0;
 			divisor++;
-			
 		}
 		
 		if (esPrimo==true){

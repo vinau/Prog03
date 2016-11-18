@@ -7,7 +7,34 @@ public class Ejercicio_10 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner teclado= new Scanner (System.in);
+
+		int numero, divisor=2;
+		boolean esPrimo=false;
 		
+		System.out.println ("Introduzca un número:");
+		numero = teclado.nextInt();
+		
+		numero++;
+		
+		while(esPrimo==false){
+		esPrimo=true;
+		while (esPrimo && divisor <numero){
+			
+			esPrimo=numero%divisor !=0;
+			divisor++;
+		}
+		
+		if (esPrimo==true){
+		System.out.println(numero);
+		}
+		else {
+		numero++;
+		esPrimo=false;
+		}
+	}
+}
+}
+/*				
 		int numero, divisor=2,contador,contador2,suma;
 		boolean Primo=false;
 		
@@ -36,10 +63,10 @@ public class Ejercicio_10 {
 	
 			
 		}
-			
+*/		
 
 		
-		
+
 	
 		
 		
